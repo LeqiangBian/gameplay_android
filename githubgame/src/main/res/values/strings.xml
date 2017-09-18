@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Code Map</string>
+
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="player1score">0</string>
+    <string name="player2score">0</string>
+
+    <string name="play">Let\'s learn code!</string>
+
+    <string name="home">Home</string>
+    <string name="confirmleave">Confirm Leave</string>
+    <string name="confirmleaveMessage">Are you sure you want to leave? Unfinished games will not be saved.</string>
+
+    <string name="textview_question">Question</string>
+
+</resources>

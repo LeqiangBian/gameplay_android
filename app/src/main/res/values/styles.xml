@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--dialogactivity的主题-->
+    <style name="AlertNoActionBar" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--说明提示框是否有边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--说明提示框是否是浮动的-->
+        <item name="android:windowIsFloating">true</item>
+        <!--明提示框是滞是透明的-->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:shadowRadius">20dp</item>-->
+        <!--<item name="android:radius">20dp</item>-->
+        <!--是否充许对话框的背景变暗-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+    </style>
+</resources>

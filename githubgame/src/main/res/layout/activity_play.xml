@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.emy.wichacks.Play">
+
+    <TextView
+        android:id="@+id/textview_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_question"/>
+
+    <TableLayout
+        android:id="@+id/gridlayout_answers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_question"
+        android:background="@android:color/black">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/button_A"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:background="@android:color/holo_blue_dark"/>
+            <Button
+                android:id="@+id/button_B"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:background="@android:color/holo_blue_dark"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/button_C"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:background="@android:color/holo_blue_dark"/>
+            <Button
+                android:id="@+id/button_D"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:background="@android:color/holo_blue_dark"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridlayout_answers"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/holo_blue_light">
+
+        <ImageView
+            android:id="@+id/octocat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/octocat"/>
+
+        <ImageView
+            android:id="@+id/block1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/octocat"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_green_light"/>
+        <ImageView
+            android:id="@+id/block2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/block1"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_green_light"/>
+        <ImageView
+            android:id="@+id/block3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/block2"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_green_light"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/button_newgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Game"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+</RelativeLayout>

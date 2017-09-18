@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <VideoView
+        android:id="@+id/vv"
+        android:layout_width="@dimen/y1920"
+        android:layout_height="@dimen/y1080"/>
+    <RelativeLayout
+        android:id="@+id/rl_splash"
+        android:layout_alignParentBottom="true"
+        android:background="@color/iv_home_bg"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/frame_subject"
+            android:layout_width="@dimen/y100"
+            android:layout_height="@dimen/y100"
+            android:id="@+id/iv_test1"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/frame_target"
+        android:layout_width="@dimen/y100"
+        android:layout_height="@dimen/y100"
+        android:id="@+id/iv_test2"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_start_game"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginRight="@dimen/y20"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="开始游戏"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_finger"
+            android:src="@drawable/finger_select"
+            android:layout_width="@dimen/y204"
+            android:layout_height="@dimen/y204" />
+    </RelativeLayout>
+</RelativeLayout>
